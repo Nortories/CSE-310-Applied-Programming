@@ -4,10 +4,46 @@
     font-family: sans-serif;
 }
 .banner{
-    /* width: 100%;
-    height: 100vh; */
-    /* background-image: linear-gradient(rgba(0,0,0,0,.75), rgba(0,0,0,0.75)),url("background.jpg"); */
-    background-image: url("background.jpg");
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
     background-size: cover;
     background-position: center;
+}
+.navabar{
+    width: 50%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(26, 24, 24, 0.3);
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navabar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navabar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.navabar ul li::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background: rgb(204, 106, 163);
+    position: absolute;
+    left: 0;
+    bottom: -5;
+    transition: 0.5s;
+}
+.navabar ul li:hover:after{
+    width: 100%;
 }
