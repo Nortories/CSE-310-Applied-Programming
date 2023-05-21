@@ -1,66 +1,218 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <title>index</title>
-    <link type="text/css" rel="stylesheet" href="site-plan.css">
-  </head>  
-  <body>
-  
-  <nav><ul>
+
+<head>
+  <meta charset="utf-8">
+  <title>Joshua Sooaemalelagi</title>
+  <style>
+    .banner {
+      background-image: url(aboutme.jpg);
+      object-fit: stretch;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .navabar {
+      width: 50%;
+      margin: auto;
+      padding: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(26, 24, 24, 0.3);
+    }
+
+    .logo {
+      width: 120px;
+      cursor: pointer;
+      display: grid;
+      border-color: #FCA311;
+      border-style: inset;
+      border: 4;
+      align-items: right;
+      width: 150px;
+      height: 100px;
+    }
+
+    .navabar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+    }
+
+    .navabar ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+    }
+
+    .navabar ul li::after {
+      margin-top: 15px;
+      content: '';
+      height: 5px;
+      width: 0;
+      background: rgb(204, 106, 163);
+      position: absolute;
+      left: 0;
+      transition: 0.5s;
+    }
+
+    .navabar ul li:hover:after {
+      width: 100%;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+
+    .highlights{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .sum-highlight-list {
+      margin-bottom: 20px;
+      border: 15px solid #881818;
+      padding: 10px;
+      background-color: #f9f9f9;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .experience {
+      margin-bottom: 20px;
+      border: 15px solid #881818;
+      padding: 10px;
+      background-color: #f9f9f9;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .education {
+      margin-bottom: 20px;
+      border: 15px solid #881818;
+      padding: 10px;
+      background-color: #f9f9f9;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="navabar">
+      <img src="nortories-logo.png" class="logo">
+      <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="update.html">Updates</a></li>
-        <li><a href="submit.html">Submission</a></li>
-    </ul></nav>
-  <!-- div, section, main, header, footer, nav, -->
-    <header class="logo">
-     <img class="left-img-logo" src="https://cdn.glitch.global/c5df60ae-586a-4a33-b537-e4fa31e56efc/Fin%20N%20circal%20icon.png?v=1650209824990" alt="Logo"><h1>Home page</h1><img class="right-img-logo" src="https://cdn.glitch.global/c5df60ae-586a-4a33-b537-e4fa31e56efc/Fin%20N%20circal%20icon.png?v=1650209824990"  alt="Logo">
-    </header><br>
-  
-    <div class="opener">
-      <header class="title-opener"><h2>Welcome to Nortories Games</h2></header>
-      <p class="p-opener">
-        Welcome to Nortories Game Studio, where you can get direct updates on the latest game development processes of our currently working on game. Learn about our team, game or ever how to contribute or directly support the game development process. Updates tend to happen at the 1st of every month so be sure to keep coming back to see the latest updates.
-      </p>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="githubpage.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="nortories-logo.png" class="logo">
     </div>
-    <div class="team-info">
-      <header class="title-team"><h1>
-        Team info
-        </h1></header>
-      <p class="p-team">
-        Our team consists of one programmer (Josh) one artist (also Josh) and one level designer (Josh as well) with a combined total of 3 years of armature game dev experience. As a solo game developer living in his mother’s basement Josh has a strong passion for games and game development. He started playing role playing games all the way back in 1996 with his first game boy playing Zelda, ever since then Josh has loved video games. Then in 2019 at the start of the pandemic Josh discovered the game engine Unity and began to learn how to code in C#, however his game journey never really took off until he began to have school assignments where he started to realize he could hit two birds with one stone by starting up a website based off a game he has always wanted to make. This brings us to now where Josh created this web site to help continue his passion of games development as well as involve and create a community to read, learn, and support this creative process.
-      </p>
-      <img class="img-team" src= "https://cdn.glitch.global/780173cc-0114-438d-83d8-4597b0ec8a44/20220520_195034.jpg?v=1653097923717" alt="team-img">
-    </div><br>
-    
-    <div class="game-info">
-      <header class="title-game"><h1>
-        About the game
-        </h1></header>
-      <img class="img-game" src="https://cdn.glitch.global/780173cc-0114-438d-83d8-4597b0ec8a44/OutsideShip.PNG?v=1653093083847" alt="game-img">
-      <p class="p-game">
-        Our game is a top down 2D role playing game based in space. The earth was destroyed a hundred years ago and what remains of the last of humanity drifts in space in fleets of space ships that have replaced the urban cities. Society among the space fleet is in a constant need of survival with each ship playing a different role to contributing to the fleet’s survival. You play as the new comer to the fleet that was left behind as earth was being destroy over a hundred years ago, however you found a way to cryogenically freeze and lunch your self into space. Being pick up by the fleet over a century later your story begins as you awake once more in this post dystopian era.
-      </p>
-    </div><br>
-    
-    <div class="support-info">
-      <header class="title-support"><h1>
-        Ways to support
-        </h1></header>
-      <p class="p-support">
-        If you want to support the development of our game consider contributing to our Patreon. (<a href="https://www.patreon.com/nortories">Patreon</a>) As a Patreon member you will have special access to the game alpha and beta testing phase of development as well as being able to contribute directly to the game by submitting your own ideas and thoughts about how we can improve on the game. Patrion members are greatly apricated however not required to follow and stay up to date with the latest updates of the development processes. Non members can also contribute to the game by voting on the submission page (<a href="submit.html">Submission</a>) from a list of ideas to be added to the game.
-      </p>
-      <img class="img-support" src="https://cdn.glitch.global/780173cc-0114-438d-83d8-4597b0ec8a44/loot-3498166_1920.png?v=1653097637435" alt="support-img">
-    </div><br>
-    
-        <footer class="foot">
-    <nav> 
-      <a href="site-plan.html">Site Plan</a>
-      <a href="https://www.patreon.com/nortories">Donate</a>
-      <a href="https://www.copyright.gov" style="color: #E5E5E5;" class="copy-right">&copy; 2022 Nortories Games - Joshua Sooaemalelagi - WDD130-22</a>    
-    </nav>
-  </footer>
-    
-  </body>
-  
+    </head>
+</body>
+
+<body>
+  <h1>Resume</h1>
+
+  <div class="row">
+    <div class="sum-highlight-list">
+      <h2>Summary</h2>
+      <p>Dependable and hard-working student with experience in construction,
+        computer technologies and electronics, seeking a position in AV Productions.
+        Able to take direction, very reliable and good at communicating in a team.</p>
+      <p>Joshua Sooaemalelagi : (208) 840-0368</p>
+      <p>Sooaemalelagij@gmail.com</p>
+
+      <h2>Highlights</h2>
+      <div class="highlights">
+      <ul>
+        <li>Ability to use various types of equipment and tools</li>
+        <li>Great understanding of electrical principles</li>
+        <li>Experience with computer networks</li>
+        <li>Comfortably at heights</li>
+      </ul>
+      <ul>
+        <li>Can lift 100+lbs</li>
+        <li>Personable </li>
+        <li>Reliable</li>
+        <li>Follow direction</li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="experience">
+      <h2>Experience</h2>
+      <div>
+        <h3>Construction Foreman (Waterproofing) - 2018-2022</h3>
+        <ul>
+          <li>Managed a team of workers</li>
+          <li>Performed heavy labor</li>
+          <li>Mastered proficiency in various equipment and tools</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Student for Software Engineering - 2019-Currently</h3>
+        <ul>
+          <li>Proficient in many software programs</li>
+          <li>Troubleshoot computer network issues</li>
+          <li>Manage multiple tasks simultaneously</li>
+          <li>Keep organized and communicate well with others</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Electrical Repairs - 2018-Currently</h3>
+        <ul>
+          <li>Multiple home renovations</li>
+          <li>Video game cabinet electrical repairs</li>
+          <li>Built own personal computers</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="education">
+      <h2>Education</h2>
+      <p>BYU Idaho University (working on Bachelor's degree in Software Engineering)</p>
+    </div>
+  </div>
+</body>
+
 </html>

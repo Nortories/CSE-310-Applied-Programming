@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My GitHub Repositories</title>
   <style>
+    .banner {
+      background-image: url(repo-page-bg.jpg);
+      object-fit: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .navabar {
+      width: 50%;
+      margin: auto;
+      padding: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(26, 24, 24, 0.3);
+    }
+
+    .logo {
+      width: 120px;
+      cursor: pointer;
+      display: grid;
+      border-color: #FCA311;
+      border-style: inset;
+      border: 4;
+      align-items: right;
+      width: 150px;
+      height: 100px;
+    }
+
+    .navabar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+    }
+
+    .navabar ul li a {
+      text-decoration: none;
+      color: rgb(57, 255, 50);
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .navabar ul li::after {
+      margin-top: 15px;
+      content: '';
+      height: 5px;
+      width: 0;
+      background: rgb(204, 106, 163);
+      position: absolute;
+      left: 0;
+      transition: 0.5s;
+    }
+
+    .navabar ul li:hover:after {
+      width: 100%;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -14,7 +78,8 @@
 
     h1 {
       text-align: center;
-      margin-bottom: 30px;
+      color: gold;
+      margin-top: -0.75%;
     }
 
     .repo-container {
@@ -23,13 +88,37 @@
       flex-wrap: wrap;
     }
 
-    .repo-card {
+    .repo-to-do {
       width: calc(50% - 10px);
       max-width: 400px;
-      background-color: #ffffff;
+      background-color: rgb(196, 84, 190);
       padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-left: 1%;
+      border: #89108d;
+      border-radius: 35%;
+    }
+
+    .repo-ball-smasher {
+      width: calc(50% - 10px);
+      max-width: 400px;
+      background-color: rgb(196, 84, 190);
+      padding: 20px;
+      margin-bottom: 20px;
+      margin-left: 1%;
+      border: #89108d;
+      border-radius: 35%;
+    }
+
+    .repo-tba {
+      width: calc(50% - 10px);
+      max-width: 400px;
+      background-color: rgb(196, 84, 190);
+      padding: 20px;
+      margin-bottom: 20px;
+      margin-left: 1%;
+      border: #89108d;
+      border-radius: 35%;
     }
 
     .repo-title {
@@ -38,41 +127,63 @@
     }
 
     .repo-description {
-      color: #555555;
+      color: black;
       margin-bottom: 10px;
     }
 
     .repo-link {
       display: block;
-      text-align: right;
-      color: #007bff;
+      text-align: center;
+      color: #27108d;
       text-decoration: none;
+      font-weight: bolder;
     }
   </style>
 </head>
+
 <body>
-  <h1>My GitHub Repositories</h1>
-  <div class="repo-container">
-    <div class="repo-card">
-      <h2 class="repo-title">Repository 1</h2>
-      <p class="repo-description">Description of Repository 1.</p>
-      <a class="repo-link" href="https://github.com/your-username/repo1" target="_blank">View on GitHub</a>
+  <div class="banner">
+    <div class="navabar">
+      <img src="nortories-logo.png" class="logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="githubpage.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="nortories-logo.png" class="logo">
     </div>
-    <div class="repo-card">
-      <h2 class="repo-title">Repository 2</h2>
-      <p class="repo-description">Description of Repository 2.</p>
-      <a class="repo-link" href="https://github.com/your-username/repo2" target="_blank">View on GitHub</a>
-    </div>
-    <div class="repo-card">
-      <h2 class="repo-title">Repository 3</h2>
-      <p class="repo-description">Description of Repository 3.</p>
-      <a class="repo-link" href="https://github.com/your-username/repo3" target="_blank">View on GitHub</a>
-    </div>
-    <div class="repo-card">
-      <h2 class="repo-title">Repository 4</h2>
-      <p class="repo-description">Description of Repository 4.</p>
-      <a class="repo-link" href="https://github.com/your-username/repo4" target="_blank">View on GitHub</a>
+
+
+    <div class="repo-container">
+      <div class="repo-to-do">
+        <h2 class="repo-title">To-do-App</h2>
+        <p class="repo-description">First javascript program application to make a to do list.</p>
+        <a class="repo-link" href="https://github.com/Nortories/Monster-To-do-list" target="_blank">View on GitHub</a>
+      </div>
+      <div class="repo-ball-smasher">
+        <h2 class="repo-title">Ball Smasher</h2>
+        <p class="repo-description">Unity game prototype.</p>
+        <a class="repo-link" href="https://github.com/Nortories/Unity-Project-BallSmasher" target="_blank">View on
+          GitHub</a>
+      </div>
+      <div class="repo-tba">
+        <h2 class="repo-title">Repository 3</h2>
+        <p class="repo-description">Description</p>
+        <a class="repo-link" href="https://github.com/Nortories" target="_blank">View on GitHub</a>
+      </div>
+      <div class="repo-tba">
+        <h2 class="repo-title">Repository 4</h2>
+        <p class="repo-description">Description</p>
+        <a class="repo-link" href="https://github.com/Nortories" target="_blank">View on GitHub</a>
+      </div>
     </div>
   </div>
 </body>
+<footer class="foot">
+  <nav>
+    <a href="https://www.copyright.gov" style="color: #E5E5E5;" class="copy-right">&copy;2023 Joshua Sooaemalelagi</a>
+  </nav>
+</footer>
+
 </html>
